@@ -26,7 +26,7 @@ exports.handler = async (event) => {
 
     // Obtener el access_token usando el refresh_token
     const { credentials } = await oauth2Client.refreshAccessToken();
-    const accessToken = credentials.access_token;
+    const accessToken = credentials.accesstoken;
 
     // Configuración IMAP con acceso OAuth2
     const imapConfig = {
